@@ -1,0 +1,54 @@
+h1{color:rgb(93, 117, 255);
+    font-size:50pt;
+    font-weight: bold;}
+    
+    p.sakuraba{color:blue;}
+    
+    p#kaoru{color:coral}
+    
+    .red{font-weight: bold;
+    font-size:larger;}
+    
+    div.box1{
+        height:100px;
+        width:100px;
+        background-color:gray;
+        text-align: center;
+        border-radius: 50% 50% 50% 50%;
+        position:absolute;
+        left: ;
+        top: ;}
+    
+    div.box2{height:100px;
+        width:100px;
+        background-color:hotpink;
+        border-radius: 50% 50% 0 50%;}
+    
+    div.box3{height:100px;
+            width:100px;
+            background-color:blue;}
+    
+    div.img1{height:100px;
+        width:100px;
+        background-color:blue;
+            border-radius: 50% 50% 0 50%;
+            margin:0 0 10px;
+     }
+    div.img2{height:100px;
+        width:100px;
+        background-color:blue;
+            border-radius: 50% 50% 50% 0;
+            float:right;
+            margin:0 0 10px;}
+    div.img3{height:100px;
+        width:100px;
+        background-color:blue;
+            border-radius: 50% 0 50% 50%;
+            float:left;
+            margin:0 0 10px;}
+    div.img4{height:100px;
+        width:100px;
+        background-color:blue;
+            border-radius: 0 50% 50% 50%;
+            float:right;
+            margin:0 0 10px;}
