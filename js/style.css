@@ -1,0 +1,416 @@
+body{
+    color: #252525;
+    font-size: 1em;
+    font-family: Static,"ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.inner{
+	width:88%;
+	
+	margin:0 auto;
+}
+
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 span{
+    font-size: 0.4em;
+    color: #686868;
+    line-height: 0.8em;
+}
+
+h3{
+    line-height: 1.2em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+/*---------------------------
+header
+-------------------------*/
+.header{
+    padding: 175px 0;
+    text-align: center;
+}
+
+.top_tit{
+    margin-bottom: 15px;
+}
+
+.bg_half{
+    animation: bg-color ease　10s infinite;
+    -webkit-animation: bg-color 30s  infinite;
+}
+
+@keyframes bg-color {
+    0% { background: linear-gradient(to right, #fdeff2 0%, #fdeff2 50%, #feedbd 50%, #feedbd 100%); }
+    20% { background: linear-gradient(to right, #faeffd 0%, #faeffd 50%, #d5febd 50%, #d5febd 100%); }
+    40% { background: linear-gradient(to right, #f1effd 0%, #f1effd 50%, #bdfee0 50%, #bdfee0 100%); }
+    60% { background: linear-gradient(to right, #effbfd 0%, #effbfd 50%, #bdeefe 50%, #bdeefe 100%); }
+    80% { background: linear-gradient(to right, #effdf2 0%, #effdf2 50%, #d2bdfe 50%, #d2bdfe 100%); }
+    100% { background: linear-gradient(to right, #fdeff2 0%, #fdeff2 50%, #feedbd 50%, #feedbd 100%); }
+  }
+
+h1{
+    text-align: center;
+}
+/*---------------------------
+works
+-------------------------*/
+.work{
+    margin: 50px 0;
+}
+
+.wrapper{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-wrap{
+    width: 33%;
+}
+
+.content {
+    height: 200px;
+    margin: 70px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+.ttl{
+    text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+
+/* popup */
+.popup_wrap input{
+    display: none;
+  }
+  
+  .popup_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .popup_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup_content {
+    position: relative;
+    align-self: center;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 30px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transition: 0.5s;
+  }
+
+
+    /* pop-up 中デザイン説明内の画像*/
+    .color_img{
+        margin-bottom: 20px;
+    }
+
+    .salon_logo{
+        margin: 20px 0;
+    }
+
+  /* btn */
+  .site_btn{
+      text-align: center;
+  }
+
+  .btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+  }
+  
+  .close_btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .popup_wrap input:checked ~ .popup_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+  }
+  
+  .open_btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin:10px auto;
+    padding: 8px 16px;
+    color: #fff;
+    background:#68a9cf;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+  
+  }
+  .open_btn:hover{
+      background:#0026a5;
+      color:#fff;
+      transition: .3s ease;
+  }
+
+/* bg cover */
+.item-1{
+    background: url("image/site-top.jpg")no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.item-2{
+    background: url("image/blog-top2.jpg")no-repeat 50% 90%;
+    background-size: cover;
+}
+
+.item-3{
+    background: url("image/pokari-min.jpg")no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.item-4{
+    background: url("image/grid_template-min.jpg")no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.item-5{
+    background: url("image/design.png")no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.item-6{
+    background: url("image/salon_flyer-min.png")no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.item-7{
+    background: url("image/patatap_top-min.png")no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.item-8{
+    background: url("image/resta4-min.jpg")no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/*---------------------------
+modal(内容)
+-------------------------*/
+.modal_tit{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.modal_img{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.modal_img img{
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 12px grey;
+}
+
+.modal_info{
+    margin-bottom: 10px;
+}
+
+.modal_info dl{
+    margin: 10px 0 20px;
+    padding: 20px;
+    font-size: 0.8em;
+    background-color: #f1f1f1;
+}
+
+.modal_info dt{
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.modal_design h4{
+    margin: 20px 0;
+    padding: 0.25em 0.5em;
+    background: transparent;
+    border-left: solid 5px #68a9cf;
+}
+
+.modal_design h5{
+    margin-bottom: 10px;
+    border-bottom: solid 3px #68a9cf;
+}
+
+.modal_design p{
+    margin-bottom: 10px;
+}
+/*---------------------------
+about
+-------------------------*/
+.about{
+    padding: 50px 0;
+}
+
+
+.prof{
+    padding: 50px ;
+    text-align: center;
+    background: #ffffff;
+}
+
+.prof_img{
+    margin-bottom: 25px;
+}
+
+.myname{
+    margin-bottom: 8px;
+}
+
+.myname span{
+    font-size: 0.85rem;
+}
+
+.myschool{
+    margin-bottom: 5px;
+}
+
+.prof_content{
+    margin-bottom: 20px;
+}
+
+/*---------------------------
+contact
+-------------------------*/
+.contact{
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    margin: 30px auto 0;
+    width: 700px;
+    text-align: left;
+}
+
+.contact form dt {
+    clear: left;
+    float: left;
+    margin: 0 0 30px;
+    width: 150px;
+}
+
+.contact form dd {
+    margin: 0 0 30px 200px;
+    width: 500px;
+}
+
+.contact form input {
+    width: 480px;
+    padding: 10px;
+    background: #d7d7d7;
+}
+
+.contact form textarea {
+    padding: 10px;
+    width: 480px;
+    height: 200px;
+    background: #dfdfdf;
+}
+
+.contact .submit{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    background: #17c0eb;
+}
+
+
+/*---------------------------
+footer
+-------------------------*/
+.footer{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:600px){
+    .wrapper{
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .item-wrap{
+        width: 100%;
+    }
+
+    .popup_content{
+        width: 85%;
+    }
+  }
